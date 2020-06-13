@@ -1,0 +1,13 @@
+<section class="row">
+  <article class="column">
+    <p>This is within the Main liveview.</p>
+
+    <button phx-click="display_component">Display component</button>
+
+    <%= if @component_visible do %>
+      <%= live_component(@socket, PhxLiveComponentTestWeb.ChildComponent, id: "my-component") %>
+    <% else %>
+      <p>Component is not visible.</p>
+    <% end %>
+  </article>
+</section>

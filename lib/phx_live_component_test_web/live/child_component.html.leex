@@ -1,0 +1,9 @@
+<p>This is within the Component.<p>
+
+<button phx-click="component_event" phx-target="<%= @myself %>">Trigger component event</button>
+
+<%= if @component_event_triggered do %>
+  <p>Component event was triggered.</p>
+<% else %>
+  <p>Component event was not triggered.</p>
+<% end %>

@@ -18,6 +18,7 @@ defmodule PhxLiveComponentTestWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    live "/liveview", MainLive, :index
   end
 
   # Other scopes may use custom stacks.
